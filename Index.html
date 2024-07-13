@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        @media only screen and (max-width: 600px) {
+            #sidebar {
+                display: none;
+            }
+
+            #right {
+                width: 100vw;
+            }
+
+            #foram {
+                width: 95vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="sidebar" class="col-2 vw-auto vh-100 border border-5 border-bottom-0">
+                <div class="list-group mt-5 ">
+                    <!--<button type="button" class="list-group-item list-group-item-action">Dashbord</button>-->
+                    <button type="button" class="list-group-item list-group-item-action ">Report</button>
+                    <button type="button" class="list-group-item list-group-item-action ">Pages</button>
+                    <button type="button" class="list-group-item list-group-item-action ">States</button>
+                </div>
+            </div>
+            <div id="right" class="col-10 h-auto">
+                <div class="container">
+                    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Dashboard</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon "></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarText">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+
+                <div id="foram" class="container">
+                    <form class="form-row">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="inputUsername" class="form-label">Username</label>
+                                <input type="text" class="fs-6 form-control" placeholder="First name" id="inputUsername" aria-label="First name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword" class="form-label">Password</label>
+                                <input type="password" class=" fs-6 form-control" placeholder="Last name" aria-label="Password">
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+
+                            <div class="col-md-6">
+                                <label for="inputFirstname" class="form-label">First Name</label>
+                                <input type="text" class="fs-6 form-control" placeholder="First name" id="inputFirstname" aria-label="First name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputLastname" class="form-label">Last Name</label>
+                                <input type="password" class="fs-6 form-control" id="inputLastname" placeholder="Last name" aria-label="Last Name">
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-8">
+                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <input type="email" class=" fs-6 form-control" placeholder="example@gmail.com" id="inputEmail" aria-label="Email">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputTel" class="form-label">Phone No.</label>
+                                    <input type="tel" class="fs-6 form-control" placeholder="1234567890" aria-label="Tel">
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Address</label>
+                                        <input type="text" class="fs-6  form-control" id="inputAddress" placeholder="House No., City, State">
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-6">
+                                        <label for="exampleRadios1" class="form-label">Gander</label>
+                                        <div class="form-check">
+                                            <input class=" fs-6 form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                            <label class="fs-6 form-check-label" for="exampleRadios1">
+                                                Male
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class=" fs-6 form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            <label class=" fs-6 form-check-label" for="exampleRadios2">
+                                                Female
+                                            </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-6 mt-2">
+                                                <label for="inlineCheckbox12" class="form-label">Education</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="fs-6 form-check-input" type="checkbox" id="inlineCheckbox12" value="10th">
+                                                <label class=" fs-6 form-check-label" for="inlineCheckbox1">10th</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class=" fs-6 form-check-input" type="checkbox" id="inlineCheckbox1" value="12th">
+                                                <label class="fs-6 form-check-label" for="inlineCheckbox2">12th</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="fs-6 form-check-input" type="checkbox" id="inlineCheckbox12" value="UG">
+                                                <label class="fs-6 form-check-label" for="inlineCheckbox2">UG</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="fs-6 form-check-input" type="checkbox" id="inlineCheckbox1" value="PG">
+                                                <label class="fs-6 form-check-label" for="inlineCheckbox2">PG</label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-md-6">
+                                            <label for="inputDate" class="form-label">Date of Birth</label>
+                                            <input type="date" class="fs-6 form-control" id="inputDate">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputTime" class="form-label">Time</label>
+                                            <input type="time" class="fs-6 form-control" id="inputTime">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-md-4">
+                                            <label for="inputCity" class="form-label">City</label>
+                                            <input type="text" class="fs-6 form-control" id="inputCity">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">State</label>
+                                            <select id="inputState" class="fs-6 form-select">
+                                                <option selected>Select</option>
+                                                <option class="fs-6">Madhya Pradesh</option>
+                                                <option class="fs-6">Utter Pradesh</option>
+                                                <option class="fs-6">Bihar</option>
+                                                <option class="fs-6">Gujrat</option>
+                                                <option class="fs-6">J&K</option>
+                                                <option class="fs-6">Rajsthan</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputPincode" class="form-label">Pin Code</label>
+                                            <input type="text" class="fs-6 form-control" id="inputPincode">
+                                        </div>
+                                        <div class="row  py-5">
+                                            <div class="col-12 mx-3">
+                                                <button type="submit" class="fs-6 btn btn-primary ">
+                                                    Submit
+                                                </button>
+                                                <button type="Reset" class=" fs-6 btn btn-outline-danger">Reset</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
